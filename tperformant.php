@@ -161,9 +161,9 @@ class Tperformant extends Module
                         'col' => 3,
                         'type' => 'text',
                         'desc' => $this->l(
-                                'Your 2Performant unique code '+
-                                '(href="https://network.2performant.com/advertiser/settings/tracking_code)'
-                            ),
+                            'Your 2Performant unique code '+
+                            '(href="https://network.2performant.com/advertiser/settings/tracking_code)'
+                        ),
                         'name' => 'TPERFORMANT_PROGRAM_UNIQUE',
                         'label' => $this->l('Program unique'),
                     ),
@@ -171,9 +171,9 @@ class Tperformant extends Module
                         'col' => 3,
                         'type' => 'text',
                         'desc' => $this->l(
-                                'Your 2Performant confirm code '+
-                                '(https://network.2performant.com/advertiser/settings/tracking_code)'
-                            ),
+                            'Your 2Performant confirm code '+
+                            '(https://network.2performant.com/advertiser/settings/tracking_code)'
+                        ),
                         'name' => 'TPERFORMANT_PROGRAM_CONFIRM',
                         'label' => $this->l('Confirm code'),
                     ),
