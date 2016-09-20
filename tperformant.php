@@ -48,9 +48,11 @@ class Tperformant extends Module
         parent::__construct();
 
         $this->displayName = $this->l('2Performant tracking code');
-        $this->description = $this->l('This module implements the 2Performant tracking code from the 2Performant.com affiliate network');
+        $this->description = $this->l('This module implements the 2Performant tracking code from the ' +
+            '2Performant.com affiliate network');
 
-        $this->confirmUninstall = $this->l('Are you sure you want to uninstall the module? This will prevent commission generation');
+        $this->confirmUninstall = $this->l('Are you sure you want to uninstall the module? This will ' +
+            'prevent commission generation');
     }
 
     /**
@@ -156,14 +158,16 @@ class Tperformant extends Module
                     array(
                         'col' => 3,
                         'type' => 'text',
-                        'desc' => $this->l('Your 2Performant unique code (href="https://network.2performant.com/advertiser/settings/tracking_code)'),
+                        'desc' => $this->l('Your 2Performant unique code '+
+                            '(href="https://network.2performant.com/advertiser/settings/tracking_code)'),
                         'name' => 'TPERFORMANT_PROGRAM_UNIQUE',
                         'label' => $this->l('Program unique'),
                     ),
                     array(
                         'col' => 3,
                         'type' => 'text',
-                        'desc' => $this->l('Your 2Performant confirm code (https://network.2performant.com/advertiser/settings/tracking_code)'),
+                        'desc' => $this->l('Your 2Performant confirm code '+
+                            '(https://network.2performant.com/advertiser/settings/tracking_code)'),
                         'name' => 'TPERFORMANT_PROGRAM_CONFIRM',
                         'label' => $this->l('Confirm code'),
                     ),
@@ -226,21 +230,23 @@ class Tperformant extends Module
 
     public function hookDisplayOrderConfirmation($params)
     {
-        if(!Configuration::get('TPERFORMANT_LIVE_MODE', false))
+        if(!Configuration::get('TPERFORMANT_LIVE_MODE', false)) {
             return;
+        }
 
         $programUnique = Configuration::get('TPERFORMANT_PROGRAM_UNIQUE', false);
         $programConfirm = Configuration::get('TPERFORMANT_PROGRAM_CONFIRM', false);
 
-        if(!$programUnique || !$programConfirm)
+        if(!$programUnique || !$programConfirm) {
             return;
+        }
 
         $order = $params['objOrder'];
 
         $amount = $order->total_paid_tax_excl - $order->total_shipping_tax_excl - $order->total_wrapping_tax_excl;
         $products = $description = array();
 
-        foreach($order->getProducts() as $product) {
+        foreach ($order->getProducts() as $product) {
             $products[] = array(
                 'quantity' => $product['product_quantity'],
                 'price' => $product['product_price'],
