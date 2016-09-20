@@ -23,4 +23,4 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-<iframe height='1' width='1' scrolling='no' marginheight='0' marginwidth='0' frameborder='0' src='//event.2performant.com/events/salecheck?amount={$amount}&campaign_unique={$programUnique}&confirm={$programConfirm}&description={$description}&transaction_id={$transactionId}'></iframe>
+<iframe height='1' width='1' scrolling='no' marginheight='0' marginwidth='0' frameborder='0' src='//event.2performant.com/events/salecheck?amount={$amount|escape:'url'}&campaign_unique={$programUnique|escape:'url'}&confirm={$programConfirm|escape:'url'}&description={$description|escape:'url'}&transaction_id={$transactionId|escape:'url'}'></iframe>
