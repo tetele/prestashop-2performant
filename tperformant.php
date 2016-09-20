@@ -39,6 +39,7 @@ class Tperformant extends Module
         $this->version = '0.1.0';
         $this->author = 'tetele';
         $this->need_instance = 0;
+        $this->module_key = '31986c8918ce3a5ea09b5797be06b9d1';
 
         /**
          * Set $this->bootstrap to true if your module is compliant with bootstrap (PrestaShop 1.6)
