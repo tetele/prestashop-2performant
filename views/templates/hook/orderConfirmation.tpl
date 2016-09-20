@@ -1,0 +1,1 @@
+<iframe height='1' width='1' scrolling='no' marginheight='0' marginwidth='0' frameborder='0' src='//event.2performant.com/events/salecheck?amount={$amount}&campaign_unique={$programUnique}&confirm={$programConfirm}&description={$description}&transaction_id={$transactionId}'></iframe>
