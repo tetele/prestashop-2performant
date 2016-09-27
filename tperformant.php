@@ -163,7 +163,7 @@ class Tperformant extends Module
                         'type' => 'text',
                         'desc' => $this->l(
                             'Your 2Performant unique code '+
-                            '(href="https://network.2performant.com/advertiser/settings/tracking_code)'
+                            '(https://network.2performant.com/advertiser/settings/tracking_code)'
                         ),
                         'name' => 'TPERFORMANT_PROGRAM_UNIQUE',
                         'label' => $this->l('Program unique'),
