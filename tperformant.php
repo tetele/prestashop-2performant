@@ -208,6 +208,10 @@ class Tperformant extends Module
         foreach (array_keys($form_values) as $key) {
             Configuration::updateValue($key, Tools::getValue($key));
         }
+
+        $this->context->smarty->assign('form_successes', array(
+            'Settings updated!'
+        ));
     }
 
     /**

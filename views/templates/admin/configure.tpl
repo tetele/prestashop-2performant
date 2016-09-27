@@ -29,3 +29,14 @@
 		{l s='You have to be registered with 2Performant.com in order to use this module.' mod='tperformant'}
 	</p>
 </div>
+
+{if (isset($form_successes)) && (count($form_successes) > 0)}
+	<div class="alert alert-success">
+		<h4>{l s='Success!' mod='tperformant'}</h4>
+		<ul class="list-unstyled">
+		{foreach from=$form_successes item='message'}
+			<li>{$message|escape:'htmlall':'UTF-8'}</li>
+		{/foreach}
+		</ul>
+	</div>
+{/if}
