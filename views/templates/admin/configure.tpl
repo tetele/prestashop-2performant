@@ -22,3 +22,10 @@
 *  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
+
+<div class="panel">
+	<h3><i class="icon icon-credit-card"></i> {l s='2Performant tracking code' mod='tperformant'}</h3>
+	<p>
+		{l s='You have to be registered with 2Performant.com in order to use this module.' mod='tperformant'}
+	</p>
+</div>
