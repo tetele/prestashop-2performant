@@ -36,7 +36,7 @@ class Tperformant extends Module
     {
         $this->name = 'tperformant';
         $this->tab = 'checkout';
-        $this->version = '0.1.0';
+        $this->version = '0.1.1';
         $this->author = 'tetele';
         $this->need_instance = 0;
         $this->module_key = '31986c8918ce3a5ea09b5797be06b9d1';
@@ -252,7 +252,7 @@ class Tperformant extends Module
             return;
         }
 
-        $order = $params['objOrder'];
+        $order = $params['order'];
 
         $amount = $order->total_paid_tax_excl - $order->total_shipping_tax_excl - $order->total_wrapping_tax_excl;
         $products = $description = array();
