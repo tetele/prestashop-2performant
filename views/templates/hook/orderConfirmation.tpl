@@ -18,7 +18,7 @@
 * needs please refer to http://www.prestashop.com for more information.
 *
 *  @author    Tudor Sandu <prestashop@tudorsandu.ro>
-*  @copyright 2007-2016 Tudor Sandu
+*  @copyright 2007-2017 Tudor Sandu
 *  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
